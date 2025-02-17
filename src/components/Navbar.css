@@ -51,10 +51,9 @@ nav button:hover {
   .navbar-logo {
       display: none;
   }
+}
 
 
 #info-btn:hover {
     background-color: #e59400; /* Darker orange on hover */
 }
-
-  
