@@ -1,0 +1,60 @@
+/* Navbar container */
+header {
+    position: fixed; /* Fix the Navbar at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.18); /* Semi-transparent black background */
+    z-index: 1000; /* Ensure it's above other content */
+    padding: 10px 0; /* Add some padding */
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-evenly; /* Distribute buttons evenly */
+    align-items: center;
+    max-width: 1200px; /* Limit width for larger screens */
+    margin: 0 auto; /* Center the Navbar */
+}
+.navbar-logo {
+  height: 40px; /* Adjust the height as needed */
+  margin-right: 20px; /* Add some spacing between the logo and the first link */
+}
+
+/* Links and buttons */
+nav a,
+nav button {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for links and buttons */
+nav a:hover,
+nav button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    color: #FBA518; /* Change text color on hover */
+}
+
+/* Specific style for the Contact button */
+#info-btn {
+    background-color: #FBA518; /* Orange background */
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .navbar-logo {
+      display: none;
+  }
+
+
+#info-btn:hover {
+    background-color: #e59400; /* Darker orange on hover */
+}
+
+  

@@ -1,0 +1,170 @@
+/* Gallery container */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  grid-auto-rows: 200px; /* Base row height */
+  gap: 10px; /* Add some gap between images */
+  padding: 70px 10px 10px; /* Add padding-top to account for the Navbar */
+  position: relative;
+  overflow: hidden; /* Ensure no overflow from expanded images */
+}
+
+.gallery::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FEF5E2;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+  z-index: -1;
+}
+
+/* Title for the section */
+.gallery-title {
+  grid-column: 1 / -1; /* Span across all columns */
+  text-align: center;
+  font-size: 5.5rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+/* Gallery item with dynamic sizing */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  z-index: 1; /* Ensure items are stacked correctly */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Larger images for specific items */
+.gallery-item.large {
+  grid-row: span 2; /* Span two rows */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images cover the area */
+  transition: transform 0.3s ease;
+  cursor: pointer; /* Indicate the image is clickable */
+}
+
+/* Hover effect to expand the hovered image */
+.gallery-item:hover img {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Overlay for title and description */
+/* .gallery-item .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+} */
+
+/* Show overlay on hover */
+.gallery-item:hover .overlay {
+  transform: translateY(0);
+}
+
+/* Title and description styling */
+.gallery-item h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.gallery-item p {
+  margin: 10px 0 0;
+  font-size: 1rem;
+}
+
+/* Back button */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10; /* Ensure it's above other elements */
+}
+
+.back-button:hover {
+  background-color: #555;
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above everything */
+}
+
+.modal img {
+  max-width: 60%; /* 60% of the screen width */
+  max-height: 80vh; /* 80% of the viewport height */
+  border-radius: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Navigation buttons */
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  color: #333;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.modal-nav:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.modal-nav.prev {
+  left: 20px;
+}
+
+.modal-nav.next {
+  right: 20px;
+}

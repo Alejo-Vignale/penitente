@@ -1,0 +1,467 @@
+{
+    "galleryItems": [
+      {
+        "image": "/image/refugiogrupos.webp",
+        "title": "refugio",
+        "description": "vista de afuera",
+        "category": "Hospedaje",
+        "large": true
+      },
+      {
+        "image": "/image/refugio3.webp",
+        "title": "Salon intenrior",
+        "description": "salon para compartir y poder trabajar en caso de lluvias.",
+        "category": "Hospedaje",
+        "large": true
+      },
+      {
+        "image": "/image/refugio4.webp",
+        "title": "Cocina",
+        "description": "Cocina equipada",
+        "category": "Hospedaje"
+      },
+      {
+        "image": "/image/refugio5.webp",
+        "title": "parte del salon",
+        "description": "",
+        "category": "Hospedaje",
+        "large": true
+      },
+      {
+        "image": "/image/refugio6.webp",
+        "title": "Cuartos con cuchetas",
+        "description": "camas con colchon, dos cuartos grandes en la parte superior y dos en la parte inferior.",
+        "category": "Hospedaje"
+      },
+      {
+        "image": "/image/refugio7.webp",
+        "title": "Banos",
+        "description": "en la parte inferior hay dos banos sin duchas",
+        "category": "Hospedaje",
+        "large": true
+      },
+      {
+        "image": "/image/refugio8.webp",
+        "title": "Salon",
+        "description": "salon comunal",
+        "category": "Hospedaje",
+        "large": true
+      },
+      {
+        "image": "/image/refugioafuera.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Hospedaje"
+      },
+
+      {
+        "image": "/image/parque01.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque",
+        "large": true
+      },
+      {
+        "image": "/image/parque03.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque" 
+      },
+      {
+        "image": "/image/parque05.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque"
+      },
+
+      {
+        "image": "/image/parque08.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque",
+        "large": true
+      },
+
+      {
+        "image": "/image/parque10.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque",
+        "large": true
+      },
+      {
+        "image": "/image/parque11.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque" 
+      },
+
+      {
+        "image": "/image/parque14.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque",
+        "large": true 
+      },
+      {
+        "image": "/image/parque15.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque" 
+      },
+      {
+        "image": "/image/parque16.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque",
+        "large": true 
+      },
+      {
+        "image": "/image/parque17.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque" 
+      },
+      {
+        "image": "/image/parque18.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque",
+        "large": true 
+      },
+      {
+        "image": "/image/parque19.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque" 
+      },
+      {
+        "image": "/image/parque20.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque",
+        "large": true 
+      },
+      {
+        "image": "/image/parque21.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque" 
+      },
+      {
+        "image": "/image/parque22.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque",
+        "large": true 
+      },
+      {
+        "image": "/image/parque23.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque" 
+      },
+      {
+        "image": "/image/parque24.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque",
+        "large": true 
+      },
+      {
+        "image": "/image/parque118.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "El Parque" 
+      },
+      {
+        "image": "/image/actividades03.webp",
+        "title": "Salon",
+        "description": "salon comunal",
+        "category": "Actividades",
+        "large": true
+      },
+      {
+        "image": "/image/actividades04.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades"
+      },
+      {
+        "image": "/image/actividades25.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades"
+      },
+
+      {
+        "image": "/image/actividades05.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades",
+        "large": true
+      },
+      {
+        "image": "/image/actividades06.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades" 
+      },
+      {
+        "image": "/image/actividades07.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades" 
+      },
+      {
+        "image": "/image/actividades08.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades",
+        "large": true
+      },
+
+      {
+        "image": "/image/actividades09.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades",
+        "large": true
+      },
+
+      {
+        "image": "/image/actividades10.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades"
+      },
+      {
+        "image": "/image/actividades11.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades" 
+      },
+
+      {
+        "image": "/image/actividades12.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades",
+        "large": true 
+      },
+      {
+        "image": "/image/actividades13.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades" 
+      },
+      {
+        "image": "/image/actividades23.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades"
+      },
+
+      {
+        "image": "/image/actividades14.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades",
+        "large": true 
+      },
+      {
+        "image": "/image/actividades15.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades" 
+      },
+      {
+        "image": "/image/actividades16.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades",
+        "large": true 
+      },
+      {
+        "image": "/image/actividades17.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades" 
+      },
+      {
+        "image": "/image/actividades18.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades",
+        "large": true 
+      },
+      {
+        "image": "/image/actividades19.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades" 
+      },
+      {
+        "image": "/image/actividades20.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades",
+        "large": true 
+      },
+      {
+        "image": "/image/actividades21.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades" 
+      },
+      {
+        "image": "/image/actividades22.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades",
+        "large": true 
+      },
+      {
+        "image": "/image/actividades24.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Actividades" 
+      },
+      {
+        "image": "/image/restaurante0.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Restaurante",
+        "large": true 
+      },
+      {
+        "image": "/image/restaurante02.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Restaurante" 
+      },
+      {
+        "image": "/image/restaurante03.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Restaurante",
+        "large": true 
+      },
+      {
+        "image": "/image/restaurante04.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Restaurante" 
+      },
+      {
+        "image": "/image/restaurante05.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Restaurante",
+        "large": true 
+      },
+      {
+        "image": "/image/restaurante06.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Restaurante" 
+      },
+      {
+        "image": "/image/restaurante07.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Restaurante",
+        "large": true 
+      },
+      {
+        "image": "/image/restaurante20.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Restaurante",
+        "large": true 
+      },
+      {
+        "image": "/image/restaurante21.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Restaurante" 
+      },
+      {
+        "image": "/image/restaurante23.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Restaurante" 
+      },
+      {
+        "image": "/image/restaurante24.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Restaurante" 
+      },
+      {
+        "image": "/image/fauna0.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Fauna y Flora" 
+      },
+      {
+        "image": "/image/fauna02.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Fauna y Flora",
+        "large": true 
+      },
+      {
+        "image": "/image/fauna03.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Fauna y Flora" 
+      },
+      {
+        "image": "/image/fauna04.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Fauna y Flora",
+        "large": true 
+      },
+      {
+        "image": "/image/fauna05.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Fauna y Flora",
+        "large": true 
+      },
+      {
+        "image": "/image/fauna06.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Fauna y Flora" 
+      },
+      {
+        "image": "/image/fauna07.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Fauna y Flora" 
+      },
+      {
+        "image": "/image/fauna09.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Fauna y Flora",
+        "large": true 
+      },
+      {
+        "image": "/image/fauna10.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Fauna y Flora" 
+      },
+      {
+        "image": "/image/fauna11.webp",
+        "title": "Vista de afuera",
+        "description": "",
+        "category": "Fauna y Flora" 
+      }
+
+    ]
+  }

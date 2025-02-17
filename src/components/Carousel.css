@@ -1,0 +1,331 @@
+/* Carousel Styles */
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel .list .item {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel .list .item.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.carousel .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel .list .item .content {
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.carousel .text-box {
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    backdrop-filter: blur(0.5px);
+    padding: 10px;
+}
+
+.carousel .list .item .content .author {
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.carousel .list .item .content .title,
+.carousel .list .item .content .topic {
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 1.3em;
+}
+
+.carousel .list .item .content .topic {
+    color: #FBA518;
+}
+
+.carousel .list .item .content .des {
+    margin-top: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.carousel .list .item .content .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.carousel .list .item .content button {
+    border: none;
+    background-color: #eee;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.carousel .list .item .content button:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+    border: 1px solid #eee;
+}
+
+.carousel .list .item .content button:hover {
+    background-color: #FBA518;
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Thumbnail Styles */
+.thumbnail {
+    position: absolute;
+    bottom: 50px;
+    right: 5%; /* Keep the thumbnails to the right */
+    transform: none; /* Keep original positioning */
+    width: max-content;
+    display: flex !important; /* Always show */
+    gap: 20px;
+    opacity: 1 !important; /* Ensure visibility */
+    z-index: 100; /* Keep it above other elements */
+}
+
+.thumbnail .item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.thumbnail .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnail .item .category-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.thumbnail .item:hover .category-name {
+    opacity: 1;
+}
+
+.thumbnail .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail .item:hover img {
+    transform: scale(1.1);
+}
+
+.thumbnail .item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail .item:hover::after {
+    opacity: 1;
+}
+
+.thumbnail .item .content {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.thumbnail .item .content .title {
+    font-weight: bold;
+}
+
+/* Arrows Styles */
+.arrows {
+    position: absolute;
+    bottom: 50px; /* Align arrows with the thumbnail */
+    right: calc(55% + 180px); /* Keep a distance from the thumbnail */
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+    z-index: 101;
+    transition: right 0.3s ease;
+}
+
+.arrows button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(238, 238, 238, 0.6);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+    font-family: monospace;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    transition: 0.5s;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.arrows button:hover {
+    background-color: #FBA518;
+    color: #eee;
+}
+
+/* For screen sizes max-width 1350px */
+@media screen and (max-width: 1350px) {
+    /* Hide arrows */
+    .arrows {
+        display: none;
+    }
+
+    /* Adjust carousel content */
+    .carousel .list .item .content {
+        top: 10%;
+        width: 90%;
+        max-width: 600px;
+        padding: 10px;
+        padding-right: 0;
+        margin: 0 auto; /* Center content horizontally, but keep the text left-aligned */
+        text-align: left; /* Ensure text stays left-aligned */
+    }
+
+    /* Ensure thumbnails remain at the bottom */
+    .thumbnail {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%; /* Make the container span the full width */
+        max-width: 1200px; /* Ensure thumbnails don't get too wide */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        display: flex;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .thumbnail .item {
+        scroll-snap-align: start; /* Ensure each thumbnail snaps to the left */
+        flex: 0 0 auto; /* Prevent shrinking */
+        width: 150px; /* Thumbnail width */
+        height: 220px; /* Maintain aspect ratio */
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .thumbnail .item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* For screen sizes max-width 950px */
+@media screen and (max-width: 950px) {
+    /* Shrink text sizes */
+    .carousel .list .item .content .title,
+    .carousel .list .item .content .topic {
+        font-size: 4em; /* Smaller font size */
+    }
+
+    .carousel .list .item .content .des {
+        font-size: 0.9rem; /* Smaller description text */
+    }
+
+    .carousel .list .item .content .author {
+        font-size: 1.2rem; /* Adjust author text size */
+    }
+
+    /* Adjust thumbnail size */
+    .thumbnail .item {
+        width: 130px; /* Slightly smaller thumbnails */
+        height: 180px; /* Maintain aspect ratio */
+    }
+
+    .thumbnail {
+        bottom: 30px; /* Adjust position slightly for smaller screens */
+    }
+
+    /* Reduce the overall width of the content */
+    .carousel .list .item .content {
+        width: 80%; /* Narrower content width */
+        max-width: none; /* Remove max-width */
+    }
+}
+
+/* For screen sizes max-width 740px */
+@media screen and (max-width: 740px) {
+    /* Make the thumbnails even smaller */
+    .thumbnail .item {
+        width: 110px; /* Decrease thumbnail width */
+        height: 160px; /* Decrease thumbnail height */
+    }
+
+    /* Thumbnail container adjustments */
+    .thumbnail {
+        bottom: 20px; /* Move the thumbnails up slightly */
+        width: 95%; /* Make the container wider */
+        gap: 10px; /* Reduce spacing between thumbnails */
+    }
+
+    /* Adjust text sizes even more for small screens */
+    .carousel .list .item .content .title,
+    .carousel .list .item .content .topic {
+        font-size: 3.5em; /* Further reduce font size */
+    }
+
+    .carousel .list .item .content .des {
+        font-size: 0.85rem; /* Smaller description text */
+    }
+
+    .carousel .list .item .content .author {
+        font-size: 1rem; /* Further adjust author text size */
+    }
+}
+

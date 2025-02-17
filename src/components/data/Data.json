@@ -1,0 +1,39 @@
+{
+  "carouselItems": [
+    {
+      "image": "/image/mirador.webp",
+      "title": "Salto del",
+      "topic": "Penitente",
+      "description": "¡Te esperamos en el Parque Salto del Penitente! Un entorno natural único donde pueden disfrutar de la aventura, explorar la naturaleza y vivir una experiencia inolvidable.",
+      "category": "El Parque" 
+    },
+    {
+      "image": "/image/actividades1.webp",
+      "title": "Salto del",
+      "topic": "Penitente",
+      "description": "¡Atrévete a la adrenalina! Disfruta de tirolesa, rappel, escalada, orientación, caminatas guiadas y cabalgatas en plena naturaleza. ¡Una aventura que no olvidarán!",
+      "category": "Actividades"
+    },
+    {
+      "image": "/image/refugiogrupos.webp",
+      "title": "Salto del",
+      "topic": "Penitente",
+      "description": "Descansa en nuestro refugio con cómodas camas cucheta, cocina equipada, fogon y baño. Un lugar ideal para vivir la experiencia de la naturaleza con todas las comodidades.",
+      "category": "Hospedaje"
+    },
+    {
+      "image": "/image/restaurante0.webp",
+      "title": "Salto del",
+      "topic": "Penitente",
+      "description": "Disfruta de una comida deliciosa mientras contemplas la impresionante vista del Salto del Penitente. Nuestro restaurante ofrece un menú variado con opciones caseras y sabrosas, perfectas para cada gusto.",
+      "category": "Restaurante"
+    },
+    {
+      "image": "/image/fauna0.webp",
+      "title": "Salto del",
+      "topic": "Penitente",
+      "description": "Descubre la rica biodiversidad del parque, con especies autóctonas de flora y fauna. Un paraíso natural donde cada rincón es una sorpresa.",
+      "category": "Fauna y Flora"
+    }
+  ]
+}
