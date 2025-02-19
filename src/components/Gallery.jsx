@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import data from "./data/GalleryData.json";
 import "./Gallery.css";
@@ -6,10 +6,11 @@ import "@fontsource/montserrat"; // Defaults to weight 400
 import "@fontsource/montserrat/400.css"; // Specify weight
 import "@fontsource/montserrat/400-italic.css";
 
-const Gallery = () => {
+const Gallery = ({ toggleInfoCard }) => {
   const { category } = useParams();
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const imageRefs = useRef([]); // Ref to store image elements
 
   // Filter images based on the category
   const filteredImages = data.galleryItems.filter(
@@ -43,6 +44,35 @@ const Gallery = () => {
     setSelectedImage(filteredImages[currentIndex].image);
   };
 
+  // Lazy load images using Intersection Observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src; // Load the image
+            observer.unobserve(img); // Stop observing once loaded
+          }
+        });
+      },
+      {
+        rootMargin: "0px",
+        threshold: 0.1, // Trigger when 10% of the image is visible
+      }
+    );
+
+    // Observe all image elements
+    imageRefs.current.forEach((img) => {
+      if (img) observer.observe(img);
+    });
+
+    // Cleanup observer on unmount
+    return () => {
+      observer.disconnect();
+    };
+  }, [filteredImages]);
+
   return (
     <div className="gallery">
       {/* Display the category title */}
@@ -56,7 +86,12 @@ const Gallery = () => {
             className={`gallery-item ${item.large ? "large" : ""}`}
             onClick={() => handleImageClick(item.image, index)}
           >
-            <img src={item.image} alt={item.title} />
+            <img
+              ref={(el) => (imageRefs.current[index] = el)} // Store ref for lazy loading
+              data-src={item.image} // Use data-src for lazy loading
+              alt={item.title}
+              loading="lazy" // Native lazy loading as a fallback
+            />
             <div className="overlay">
               <h3>{item.title}</h3>
               <p>{item.description}</p>

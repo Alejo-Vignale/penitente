@@ -12,6 +12,18 @@
     z-index: 1000;
     transition: opacity 0.3s ease-in-out;
 }
+.info-card-content a {
+    text-decoration: none;
+    color: #000000; /* A nice blue color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Change color on hover */
+.info-card-content a:hover {
+    color: #0056b3; /* A darker blue for hover */
+}
+
 
 /* Info Card Content Box */
 .info-card-content {

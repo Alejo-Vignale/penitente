@@ -329,3 +329,43 @@
     }
 }
 
+/* Adjust content positioning for large screens */
+@media screen and (min-width: 1920px) {
+    .carousel .list .item .content {
+        top: 30%; /* Move the content down a bit to prevent overlap */
+        padding-top: 0; /* Optional: remove extra padding-top if needed */
+    }
+}
+
+/* Adjust for screens in the range of 1350px to 1920px */
+@media screen and (max-width: 1920px) and (min-width: 1350px) {
+    .carousel .list .item .content {
+        top: 25%; /* Adjust based on the screen size */
+    }
+}
+
+/* Default content adjustment for smaller screens */
+@media screen and (max-width: 1350px) {
+    .carousel .list .item .content {
+        top: 20%; /* Adjust for smaller screens */
+    }
+}
+
+/* For screen sizes between 950px and 1350px */
+@media screen and (max-width: 1350px) and (min-width: 950px) {
+    /* Adjust thumbnail size for better fitting */
+    .thumbnail {
+        width: 90%; /* Adjust the width of the thumbnails container */
+        max-width: 1200px; /* Set a max width to prevent over-expansion */
+        gap: 15px; /* Adjust the space between thumbnails */
+    }
+
+    .thumbnail .item {
+        width: 120px; /* Make thumbnails smaller */
+        height: 170px; /* Adjust the height proportionally */
+    }
+
+    .thumbnail .item .category-name {
+        font-size: 1.2rem; /* Adjust the font size */
+    }
+}
