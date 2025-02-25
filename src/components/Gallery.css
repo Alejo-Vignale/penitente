@@ -1,12 +1,12 @@
 /* Gallery container */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
-  grid-auto-rows: 200px; /* Base row height */
-  gap: 10px; /* Add some gap between images */
-  padding: 70px 10px 10px; /* Add padding-top to account for the Navbar */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  grid-auto-rows: 200px; 
+  gap: 10px;
+  padding: 70px 10px 10px; 
   position: relative;
-  overflow: hidden; /* Ensure no overflow from expanded images */
+  overflow: hidden;
 }
 
 .gallery::before {
@@ -26,7 +26,7 @@
 
 /* Title for the section */
 .gallery-title {
-  grid-column: 1 / -1; /* Span across all columns */
+  grid-column: 1 / -1;
   text-align: center;
   font-size: 5.5rem;
   margin-bottom: 10px;
@@ -38,47 +38,30 @@
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, z-index 0.3s ease;
-  z-index: 1; /* Ensure items are stacked correctly */
-  border-radius: 10px; /* Rounded corners */
+  z-index: 1; 
+  border-radius: 10px;
 }
 
-/* Larger images for specific items */
 .gallery-item.large {
-  grid-row: span 2; /* Span two rows */
+  grid-row: span 2; 
 }
 
 .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure images cover the area */
+  object-fit: cover;
   transition: transform 0.3s ease;
-  cursor: pointer; /* Indicate the image is clickable */
+  cursor: pointer; 
 }
 
-/* Hover effect to expand the hovered image */
 .gallery-item:hover img {
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  transform: scale(1.05);
 }
 
-/* Overlay for title and description */
-/* .gallery-item .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 20px;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
-} */
-
-/* Show overlay on hover */
 .gallery-item:hover .overlay {
   transform: translateY(0);
 }
 
-/* Title and description styling */
 .gallery-item h3 {
   margin: 0;
   font-size: 1.5rem;
@@ -89,7 +72,6 @@
   font-size: 1rem;
 }
 
-/* Back button */
 .back-button {
   position: fixed;
   top: 20px;
@@ -100,14 +82,13 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  z-index: 10; /* Ensure it's above other elements */
+  z-index: 10;
 }
 
 .back-button:hover {
   background-color: #555;
 }
 
-/* Modal styles */
 .modal {
   position: fixed;
   top: 0;
@@ -118,12 +99,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure it's above everything */
+  z-index: 1000;
 }
 
 .modal img {
-  max-width: 60%; /* 60% of the screen width */
-  max-height: 80vh; /* 80% of the viewport height */
+  max-width: 60%;
+  max-height: 80vh;
   border-radius: 10px;
 }
 

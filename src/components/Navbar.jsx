@@ -1,29 +1,40 @@
-import React from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import BudgetModal from "./BudgetModal"; // Import the BudgetModal
 import "./Navbar.css";
 
 const Navbar = ({ toggleInfoCard }) => {
-  const navigate = useNavigate(); // Use useNavigate for navigation
+  const navigate = useNavigate();
+  const [isBudgetOpen, setBudgetOpen] = useState(false);
 
-  // Function to go back to the carousel
   const goToCarousel = () => {
-    navigate("/"); // Navigate to the home page (carousel)
+    navigate("/");
   };
 
   return (
     <header>
       <nav>
-        {/* Add the logo */}
         <img src="/image/logo2.png" alt="Logo" className="navbar-logo" />
-        {/* Updated "Volver a Pagina Principal" link */}
         <a href="#home" onClick={goToCarousel} className="back-to-carousel">
           Inicio
         </a>
-        <a href="#contact">Presupesto 2025</a>
+        <a href="#" onClick={() => setBudgetOpen(true)}>
+          Presupuesto 2025
+        </a>
         <button id="info-btn" onClick={toggleInfoCard}>
           Contacto!
         </button>
       </nav>
+
+      {/* Budget Modal */}
+      <BudgetModal 
+        isOpen={isBudgetOpen} 
+        onClose={() => setBudgetOpen(false)} 
+        openContactModal={() => {
+          setBudgetOpen(false);  // Close BudgetModal
+          toggleInfoCard();      // Open InfoCard
+        }} 
+      />
     </header>
   );
 };

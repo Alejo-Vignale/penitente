@@ -2,11 +2,10 @@ import React from "react";
 import "./InfoCard.css";
 
 const InfoCard = ({ toggleInfoCard }) => {
-  // Function to handle the email link click
   const handleEmailClick = () => {
     const email = "info@saltodelpenitente.com";
-    const subject = "Consulta"; // Optional: You can pre-fill the subject
-    const body = "Hola, me gustaría obtener más información sobre..."; // Optional: You can pre-fill the body
+    const subject = "Consulta"; 
+    const body = "Hola, me gustaría obtener más información sobre...";
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;

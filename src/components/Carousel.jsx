@@ -18,9 +18,8 @@ const Carousel = () => {
     );
   };
 
-  // Pass the category of the current thumbnail to the gallery
   const openGallery = (category) => {
-    navigate(`/gallery/${category}`); // Navigate to the gallery with the category
+    navigate(`/gallery/${category}`); 
   };
 
   return (

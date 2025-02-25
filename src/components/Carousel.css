@@ -100,13 +100,13 @@
 .thumbnail {
     position: absolute;
     bottom: 50px;
-    right: 5%; /* Keep the thumbnails to the right */
-    transform: none; /* Keep original positioning */
+    right: 5%;
+    transform: none; 
     width: max-content;
-    display: flex !important; /* Always show */
+    display: flex !important; 
     gap: 20px;
-    opacity: 1 !important; /* Ensure visibility */
-    z-index: 100; /* Keep it above other elements */
+    opacity: 1 !important; 
+    z-index: 100; 
 }
 
 .thumbnail .item {
@@ -186,8 +186,8 @@
 /* Arrows Styles */
 .arrows {
     position: absolute;
-    bottom: 50px; /* Align arrows with the thumbnail */
-    right: calc(55% + 180px); /* Keep a distance from the thumbnail */
+    bottom: 50px; 
+    right: calc(55% + 180px); 
     display: flex;
     justify-content: start;
     gap: 20px;
@@ -219,7 +219,6 @@
 
 /* For screen sizes max-width 1350px */
 @media screen and (max-width: 1350px) {
-    /* Hide arrows */
     .arrows {
         display: none;
     }
@@ -231,8 +230,8 @@
         max-width: 600px;
         padding: 10px;
         padding-right: 0;
-        margin: 0 auto; /* Center content horizontally, but keep the text left-aligned */
-        text-align: left; /* Ensure text stays left-aligned */
+        margin: 0 auto;
+        text-align: left; 
     }
 
     /* Ensure thumbnails remain at the bottom */
@@ -241,9 +240,9 @@
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
-        width: 100%; /* Make the container span the full width */
-        max-width: 1200px; /* Ensure thumbnails don't get too wide */
-        overflow-x: auto; /* Enable horizontal scrolling */
+        width: 100%; 
+        max-width: 1200px; 
+        overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         display: flex;
@@ -252,10 +251,10 @@
     }
 
     .thumbnail .item {
-        scroll-snap-align: start; /* Ensure each thumbnail snaps to the left */
-        flex: 0 0 auto; /* Prevent shrinking */
-        width: 150px; /* Thumbnail width */
-        height: 220px; /* Maintain aspect ratio */
+        scroll-snap-align: start; 
+        flex: 0 0 auto;
+        width: 150px; 
+        height: 220px;
         border-radius: 10px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -268,104 +267,101 @@
 
 /* For screen sizes max-width 950px */
 @media screen and (max-width: 950px) {
-    /* Shrink text sizes */
     .carousel .list .item .content .title,
     .carousel .list .item .content .topic {
-        font-size: 4em; /* Smaller font size */
+        font-size: 4em; 
     }
 
     .carousel .list .item .content .des {
-        font-size: 0.9rem; /* Smaller description text */
+        font-size: 0.9rem;
     }
 
     .carousel .list .item .content .author {
-        font-size: 1.2rem; /* Adjust author text size */
+        font-size: 1.2rem;
     }
 
-    /* Adjust thumbnail size */
     .thumbnail .item {
-        width: 130px; /* Slightly smaller thumbnails */
-        height: 180px; /* Maintain aspect ratio */
+        width: 130px; 
+        height: 180px; 
     }
 
     .thumbnail {
-        bottom: 30px; /* Adjust position slightly for smaller screens */
+        bottom: 30px; 
     }
 
     /* Reduce the overall width of the content */
     .carousel .list .item .content {
-        width: 80%; /* Narrower content width */
-        max-width: none; /* Remove max-width */
+        width: 80%; 
+        max-width: none;
     }
 }
 
 /* For screen sizes max-width 740px */
 @media screen and (max-width: 740px) {
-    /* Make the thumbnails even smaller */
+    
     .thumbnail .item {
-        width: 110px; /* Decrease thumbnail width */
-        height: 160px; /* Decrease thumbnail height */
+        width: 110px; 
+        height: 160px;
     }
 
     /* Thumbnail container adjustments */
     .thumbnail {
-        bottom: 20px; /* Move the thumbnails up slightly */
-        width: 95%; /* Make the container wider */
-        gap: 10px; /* Reduce spacing between thumbnails */
+        bottom: 20px; 
+        width: 95%;
+        gap: 10px;
     }
 
     /* Adjust text sizes even more for small screens */
     .carousel .list .item .content .title,
     .carousel .list .item .content .topic {
-        font-size: 3.5em; /* Further reduce font size */
+        font-size: 3.5em;
     }
 
     .carousel .list .item .content .des {
-        font-size: 0.85rem; /* Smaller description text */
+        font-size: 0.85rem;
     }
 
     .carousel .list .item .content .author {
-        font-size: 1rem; /* Further adjust author text size */
+        font-size: 1rem;
     }
 }
 
 /* Adjust content positioning for large screens */
 @media screen and (min-width: 1920px) {
     .carousel .list .item .content {
-        top: 30%; /* Move the content down a bit to prevent overlap */
-        padding-top: 0; /* Optional: remove extra padding-top if needed */
+        top: 30%; 
+        padding-top: 0;
     }
 }
 
 /* Adjust for screens in the range of 1350px to 1920px */
 @media screen and (max-width: 1920px) and (min-width: 1350px) {
     .carousel .list .item .content {
-        top: 25%; /* Adjust based on the screen size */
+        top: 25%;
     }
 }
 
 /* Default content adjustment for smaller screens */
 @media screen and (max-width: 1350px) {
     .carousel .list .item .content {
-        top: 20%; /* Adjust for smaller screens */
+        top: 20%;
     }
 }
 
 /* For screen sizes between 950px and 1350px */
 @media screen and (max-width: 1350px) and (min-width: 950px) {
-    /* Adjust thumbnail size for better fitting */
     .thumbnail {
-        width: 90%; /* Adjust the width of the thumbnails container */
-        max-width: 1200px; /* Set a max width to prevent over-expansion */
-        gap: 15px; /* Adjust the space between thumbnails */
+        width: 90%; 
+        max-width: 1200px;
+        gap: 15px;
     }
 
     .thumbnail .item {
-        width: 120px; /* Make thumbnails smaller */
-        height: 170px; /* Adjust the height proportionally */
+        width: 120px; 
+        height: 170px;
     }
 
     .thumbnail .item .category-name {
-        font-size: 1.2rem; /* Adjust the font size */
+        font-size: 1.2rem;
     }
 }

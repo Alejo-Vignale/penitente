@@ -9,7 +9,6 @@ import Navbar from "./components/Navbar"; // Import the Navbar component
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Router>
-      {/* Add the Navbar outside the Routes */}
       <Navbar />
       <Routes>
         <Route path="/" element={<App />} />

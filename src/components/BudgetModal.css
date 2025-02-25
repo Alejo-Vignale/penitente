@@ -1,0 +1,106 @@
+/* Fondo del modal */
+.budget-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Contenedor del modal */
+.budget-modal-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: left;
+    max-width: 700px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+/* Título del modal */
+.budget-modal-content h3 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Párrafos */
+.budget-modal-content p {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #333;
+    text-align: justify;
+}
+
+/* Contacto como texto interactivo (mantiene el flujo de lectura) */
+#contact-link {
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline;
+}
+
+#contact-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Botón de cerrar */
+/* Botón de cerrar */
+.close-budget {
+    display: block;
+    width: 50%;
+    padding: 15px;
+    background-color: rgb(219, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 40px auto 0; /* Aumentamos el espacio superior para evitar clics accidentales */
+    text-transform: uppercase;
+}
+
+/* Efecto hover en botón de cerrar */
+.close-budget:hover {
+    background-color: darkred;
+}
+
+/* Responsivo para móviles */
+@media screen and (max-width: 768px) {
+    .budget-modal-content {
+        max-width: 90%;
+        padding: 25px;
+    }
+    .budget-modal-content h3 {
+        font-size: 1.5rem;
+    }
+    .budget-modal-content p {
+        font-size: 1.1rem;
+    }
+    #contact-link {
+        font-size: 1.2rem;
+    }
+    .close-budget {
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 18px;
+    }
+}
